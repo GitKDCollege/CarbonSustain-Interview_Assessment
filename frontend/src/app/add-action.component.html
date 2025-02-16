@@ -1,0 +1,12 @@
+<form (ngSubmit)="addAction()">
+  <label for="action">Action Name:</label>
+  <input type="text" id="action" [(ngModel)]="action" name="action" required />
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" [(ngModel)]="date" name="date" required />
+
+  <label for="points">Points:</label>
+  <input type="number" id="points" [(ngModel)]="points" name="points" required />
+
+  <button type="submit">Add Action</button>
+</form>
